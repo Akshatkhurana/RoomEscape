@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+            background-image: url(bg1.jpg);
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+           /* https://drive.google.com/drive/folders/1br9HP0AthaOjxl43ilnQ242i2kpxTJLi?usp=sharing */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .congrats-message {
+            display: none;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const username = 'matrix2.0';
+    const _0x64e0e6=_0x5714;function _0xb07f(){const _0x209349=['4190xPQEcl','452dVUcIZ','265yXRGLb','472AhRMok','110eZGygY','136953iLqDuE','PMTLH','3183UuiRZa','4725mRavZq','41988QqGkIb','10422vprRmW','241483oBWYnD','416jCwirD','49eglNuG'];_0xb07f=function(){return _0x209349;};return _0xb07f();}(function(_0x1d2dd4,_0x371957){const _0x4bbe52=_0x5714,_0x54db94=_0x1d2dd4();while(!![]){try{const _0x3391c9=-parseInt(_0x4bbe52(0xab))/0x1*(-parseInt(_0x4bbe52(0xac))/0x2)+-parseInt(_0x4bbe52(0xb3))/0x3*(parseInt(_0x4bbe52(0xad))/0x4)+parseInt(_0x4bbe52(0xae))/0x5*(parseInt(_0x4bbe52(0xa8))/0x6)+parseInt(_0x4bbe52(0xb4))/0x7*(-parseInt(_0x4bbe52(0xaf))/0x8)+-parseInt(_0x4bbe52(0xb1))/0x9*(-parseInt(_0x4bbe52(0xb0))/0xa)+parseInt(_0x4bbe52(0xa9))/0xb+-parseInt(_0x4bbe52(0xb5))/0xc*(parseInt(_0x4bbe52(0xaa))/0xd);if(_0x3391c9===_0x371957)break;else _0x54db94['push'](_0x54db94['shift']());}catch(_0x404a1b){_0x54db94['push'](_0x54db94['shift']());}}}(_0xb07f,0x1b6f2));function _0x5714(_0x111ac5,_0x127a42){const _0xb07f30=_0xb07f();return _0x5714=function(_0x571478,_0x4515cf){_0x571478=_0x571478-0xa8;let _0x16d723=_0xb07f30[_0x571478];return _0x16d723;},_0x5714(_0x111ac5,_0x127a42);}const password=_0x64e0e6(0xb2);
+
+    
+    function checkCredentials() {
+        const inputUsername = document.getElementById('username').value;
+        const inputPassword = document.getElementById('password').value;
+        if (inputUsername === username && inputPassword === password) {
+            document.getElementById('congrats').style.display = 'block';
+        } else {
+            alert('Incorrect credentials. Try again.');
+        }
+    }
+</script>
+
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <button type="button" onclick="checkCredentials()">Submit</button>
+</form>
+<div id="congrats" class="congrats-message">
+    <p>Congratulations! You solved the challenge. Follow the visual journey, double-tap the moments, and uncover more on a virtual pixelated gallery.</p>
+</div>
+
+</body>
+</html>
